@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    body {
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #lightcoral;
+    }
+
+    .register-box {
+      text-align: center;
+      background-color: coral;
+      padding: 90px;
+      border-radius: 500px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h1>Create an Account</h1>
+
+    <form action="welcome.html" method="post">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="confirm-password">Confirm Password:</label><br>
+      <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+   <p>Already have an account? <a href="new 4.html">Sign In</a></p>
+
+  </div>
+</body>
+</html>
