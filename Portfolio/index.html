@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatWorks | Graphics Design Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Great<span>Works</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Visual Stories That <span>Connect</span> & <span>Convert</span></h1>
+                <p>I create stunning graphics that make brands unforgettable. From t-shirt designs to logos, flyers to banners - your vision, my design expertise.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Creative Portfolio</h2>
+                <p>Explore my diverse range of design work across different categories</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="tshirt">Product Designs</button>
+                <button class="filter-btn" data-filter="logo">Brands</button>
+                <button class="filter-btn" data-filter="flyer">Flyers</button>
+                <button class="filter-btn" data-filter="banner">Monthly Designs</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Coca Cola -->
+                <div class="portfolio-item" data-category="tshirt">
+                    <div class="portfolio-img">
+                         <img src="./images/coca-cola.jpg" alt="Coca Cola Design" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Coca Cola</h3>
+                        <p>Taste the Feeling</p>
+                        <span class="portfolio-tag">Product Design</span>
+                    </div>
+                </div>
+                
+                <!-- Brands -->
+                <div class="portfolio-item" data-category="logo">
+                    <div class="portfolio-img">
+                         <img src="./images/th-signature.jpg" alt="TH Signature Design" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>TH Signature</h3>
+                        <p>Elevate Your Beauty, Inside and Out</p>
+                        <span class="portfolio-tag">Brand</span>
+                    </div>
+                </div>
+                
+                <!-- Flyer Designs -->
+                <div class="portfolio-item" data-category="flyer">
+                    <div class="portfolio-img">
+                          <img src="./images/felicity-footwears.jpg" alt="Felicity Footwears Flyer" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Felicity Footwears</h3>
+                        <p>Eye-catching flyer designs</p>
+                        <span class="portfolio-tag">Flyer Design</span>
+                    </div>
+                </div>
+				<div class="portfolio-item" data-category="flyer">
+                    <div class="portfolio-img">
+                          <img src="./images/genius-tv.jpg" alt="Genius Tv Flyer" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Genius Tv</h3>
+                        <p>Eye-catching flyer designs</p>
+                        <span class="portfolio-tag">Flyer Design</span>
+                    </div>
+                </div>
+				<div class="portfolio-item" data-category="flyer">
+                    <div class="portfolio-img">
+                         <img src="./images/weather.jpg" alt="Weather Flyer" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Weather</h3>
+                        <p>Eye-catching flyer designs</p>
+                        <span class="portfolio-tag">Flyer Design</span>
+                    </div>
+                </div>
+				
+                
+                <!-- Monthly Designs -->
+                <div class="portfolio-item" data-category="banner">
+                    <div class="portfolio-img">
+                         <img src="./images/july.jpg" alt="July Banner" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>July</h3>
+                        <p>Warmest wishes for a sun-kissed July</p>
+                        <span class="portfolio-tag">Monthly Design</span>
+                    </div>
+                </div>
+				<div class="portfolio-item" data-category="banner">
+                    <div class="portfolio-img">
+                         <img src="./images/november.jpg" alt="November Banner" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>November</h3>
+                        <p>Greatful for the Harvest of Memories and Moments</p>
+                        <span class="portfolio-tag">Monthly Design</span>
+                    </div>
+                </div>
+				<div class="portfolio-item" data-category="banner">
+                    <div class="portfolio-img">
+                         <img src="./images/december.jpg" alt="December Banner" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>December</h3>
+                        <p>Sparkling Joy, spreading cheer, and Making Memories</p>
+                        <span class="portfolio-tag">Monthly Design</span>
+                    </div>
+                </div>
+                
+                <!-- Branding -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-img">
+                          <img src="./images/books.jpg" alt="Books Branding" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Books</h3>
+                        <p>The Cover tells a Story</p>
+                        <span class="portfolio-tag">Branding</span>
+                    </div>
+                </div>
+                
+                <!-- Schweppes -->
+                <div class="portfolio-item" data-category="tshirt">
+                    <div class="portfolio-img">
+                          <img src="./images/schweppes.jpg" alt="Schweppes Design" />
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Schweppes</h3>
+                        <p>Savor the Sparkle</p>
+                        <span class="portfolio-tag">Product Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Design Services</h2>
+                <p>Comprehensive graphic design solutions for your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>T-Shirt Design</h3>
+                    <p>Custom apparel designs that make a statement. Perfect for merchandise, events, or fashion brands.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Memorable logos that capture your brand essence and make a lasting impression.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Flyer Design</h3>
+                    <p>Attention-grabbing flyers that effectively communicate your message and drive action.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Banner Design</h3>
+                    <p>Strategic banner designs for websites, social media, and advertising campaigns.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Complete visual identity systems including color palettes, typography, and style guides.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Custom Graphics</h3>
+                    <p>Tailored graphic solutions for any medium - digital, print, or environmental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <i class="fas fa-user" style="font-size: 200px; color: #ccc;"></i>
+                </div>
+                <div class="about-text">
+                    <h2>About GreatWorks</h2>
+                    <p>I'm a passionate graphic designer with over 5 years of experience creating visual solutions that help businesses stand out. My approach combines strategic thinking with creative execution to deliver designs that not only look great but also achieve results.</p>
+                    <p>I specialize in t-shirt designs, logos, flyers, banners, and comprehensive branding packages. Each project is an opportunity to bring a unique vision to life through careful attention to detail and a deep understanding of design principles.</p>
+                    
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Adobe Creative Suite</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>T-Shirt Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Logo Design</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Brand Identity</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What my clients say about working with me</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Joshua's t-shirt designs completely transformed our merchandise line. Sales increased by 40% after implementing his creative concepts. His attention to detail and understanding of our brand was exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user" style="font-size: 30px; color: #999;"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, Urban Threads Apparel</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The logo Joshua designed for our tech startup perfectly captured our innovative spirit. It's modern, memorable, and has become the cornerstone of our brand identity. We couldn't be happier with the result."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user" style="font-size: 30px; color: #999;"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Founder, TechNova Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Working with Joshua on our festival flyers was a game-changer. The designs were so captivating that we had our best ticket sales ever. He's responsive, talented, and truly understands marketing visuals."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user" style="font-size: 30px; color: #999;"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Event Director, SoundWave Festival</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-nav">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Ready to bring your vision to life? Let's discuss your project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Remote</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>ekundayojoshua21@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+2349013120097 / +2349032590970</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Availability</h3>
+                            <p>24/7</p>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Select a service</option>
+                                <option value="tshirt">T-Shirt Design</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="flyer">Flyer Design</option>
+                                <option value="banner">Banner Design</option>
+                                <option value="branding">Branding</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Great<span>Works</span></h3>
+                    <p>Creating visual stories that connect brands with their audience through thoughtful and impactful design solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">T-Shirt Design</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Flyer Design</a></li>
+                        <li><a href="#">Banner Design</a></li>
+                        <li><a href="#">Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on my latest work and design tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="form-control" style="margin-bottom: 10px;">
+                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 GreatWorks. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
